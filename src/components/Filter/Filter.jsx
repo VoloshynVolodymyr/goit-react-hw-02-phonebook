@@ -3,15 +3,16 @@ import { nanoid } from 'nanoid';
 import { Input, Label } from './Filter.styled';
 
 export default function Filter({ handleChange, filter }) {
-
+  const filterId = nanoid();
   return (
     <>
-      <Label>
+      <Label htmlFor={filterId}>
         Find contacts by name
       </Label>
       <Input
         type="text"
         name="name"
+        id={filterId}
         value={filter}
         onChange={handleChange}
       />
