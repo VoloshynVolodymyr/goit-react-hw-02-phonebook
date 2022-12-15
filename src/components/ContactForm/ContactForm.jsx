@@ -47,6 +47,7 @@ export class ContactForm extends Component {
           <Input
             type="text"
             name="name"
+            id={nameId}
             value={name}
             onChange={this.handleInputChange}
             pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
@@ -61,6 +62,7 @@ export class ContactForm extends Component {
           <Input
             type="tel"
             name="number"
+            id={numberId}
             value={number}
             onChange={this.handleInputChange}
             pattern="\+?\d{1,4}?[-.\s]?\(?\d{1,3}?\)?[-.\s]?\d{1,4}[-.\s]?\d{1,4}[-.\s]?\d{1,9}"
